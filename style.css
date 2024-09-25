@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+    /* border: 1px solid red; */
+}
+
+.heroContainer {
+    background-image: url(./assets/images/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.skillImage img{
+    aspect-ratio: 1/1 !important;
+    object-fit: contain !important;
+    width: 100% !important;
+}
+
+@media (width <576px) {
+    .skillImage img{
+        aspect-ratio: 16/1 !important;
+        object-fit: contain !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
